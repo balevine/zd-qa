@@ -11,8 +11,8 @@ This script does _not_ include a grading rubric. Teams and/or team leads are res
 Before running this script for the first time, you'll need to configure it with your team's information. To clone and configure it, use these commands in the terminal:
 
 ```
-git clone https://github.com/balevine/zendesk-qa
-cd zendesk-qa
+git clone https://github.com/balevine/zd-qa
+cd zd-qa
 touch .env
 echo "ZD_URL=your_url" > .env
 echo "ZD_USERNAME=your_username" > .env
@@ -36,7 +36,7 @@ ruby -v
 
 If that command isn't recognized, you need to install Ruby. The official Ruby site has [instructions for that](https://www.ruby-lang.org/en/documentation/installation/).
 
-Once Ruby is installed, you can run this script by navigating to the directory in a terminal (usually `cd ~/zendesk-qa` but it depends where you saved the directory) and running `ruby zd-qa.rb`. The script should run for a little while (possibly a couple of minutes) before writing the CSV output file to the directory. The command line will show how long the process took and how many lines were written—usually three for each support agent, by default.
+Once Ruby is installed, you can run this script by navigating to the directory in a terminal (usually `cd ~/zd-qa` but it depends where you saved the directory) and running `ruby zd-qa.rb`. The script should run for a little while (possibly a couple of minutes) before writing the CSV output file to the directory. The command line will show how long the process took and how many lines were written—usually three for each support agent, by default.
 
 ## Things to keep in mind
 
